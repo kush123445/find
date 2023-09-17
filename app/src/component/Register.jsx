@@ -113,7 +113,7 @@ function Register() {
   //  const data=new FormData();
     
   //   data.append("myfiles",ephoto);
-  //  await axios.post('http://localhost:5000/photo',data,  { headers: {'Content-Type': 'multipart/form-data'}})
+  //  await axios.post('/photo',data,  { headers: {'Content-Type': 'multipart/form-data'}})
   //   .then(res=>{
   //     console.log(res.data);
       
@@ -136,7 +136,7 @@ function Register() {
     theme :"colored"
         });
   
-     axios.post('http://localhost:5000/register', empinfo, { headers: {'Content-Type': 'multipart/form-data'}})
+     axios.post('/register', empinfo, { headers: {'Content-Type': 'multipart/form-data'}})
     
     .then(res => {
       toast.info("I'm never gonna toast you!");

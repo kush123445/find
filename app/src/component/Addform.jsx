@@ -35,7 +35,7 @@ function Additem()
       select:selectt
  }
 
- axios.post('http://localhost:5000/add', place)
+ axios.post('/add', place)
  .then(res => {
      console.log(res.data)
     

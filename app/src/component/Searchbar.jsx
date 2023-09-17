@@ -26,7 +26,7 @@ function Searchbar()
             cityname:Name,
             select:selectt
         }
-        axios.post('http://localhost:5000/search', place)
+        axios.post('/search', place)
         .then(res => {
             console.log(res.data)
             if(res.data=="")

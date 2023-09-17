@@ -9,7 +9,7 @@ function Del() {
   
   //Similar to componentDidMount and componentDidUpdate
   useEffect(() => {
-    axios.get('http://localhost:5000/search/'+ email)
+    axios.get('/search/'+ email)
       .then(response => {
         console.log(response.data)
         setEmpList(response.data);
@@ -41,7 +41,7 @@ function Del() {
     var tempemplist = [...emplist]; // make a new copy of array instead of mutating the same array directly. 
     let removerow = tempemplist.splice(index, 1);
     console.log(removerow[0].email)
-    axios.delete('http://localhost:5000/remove/' + removerow[0]._id)
+    axios.delete('/remove/' + removerow[0]._id)
       .then(res => {
         console.log(res.data)
   

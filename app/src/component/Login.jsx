@@ -30,7 +30,7 @@ function Login() {
         }
 
         
-    axios.post('http://localhost:5000/login', emplogin)
+    axios.post('/login', emplogin)
     .then(res => {
         console.log(res.data)
 

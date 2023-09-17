@@ -18,7 +18,7 @@ function Tpper()
 console.log(empemail)
 
    
-    axios.post('http://localhost:5000/profile',{ empemail:empemail})
+    axios.post('/profile',{ empemail:empemail})
       .then(response => {
         console.log(response);
         setfname(response.data.empfname)
@@ -54,7 +54,7 @@ console.log(empemail)
     }
     function Delaccount(){
 
-      axios.delete(`http://localhost:5000/deregister/${empemail}`)
+      axios.delete(`/deregister/${empemail}`)
       .then(response => {
        console.log( "deleted")
        navigate("/")
